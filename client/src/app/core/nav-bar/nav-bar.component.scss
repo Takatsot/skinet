@@ -1,23 +1,29 @@
-$shopping-cart-blue: blue;
-.fa-stack[data-count]:after{
-  position:absolute;
-  right:1%;
-  top:1%;
-  content: attr(data-count);
-  font-size:40%;
-  padding:.4em;
-  border-radius:999px;
-  line-height:.75em;
-  color: white;
-  color:$shopping-cart-blue;
-  text-align:center;
-  font-weight:bold;
-  background: white;
-  border-style:solid;
+
+
+.badge {
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
 }
-.fa-circle {
-  color:blue;
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
 }
+#lblCartCount {
+    font-size: 12px;
+    background:blue;
+    color: #fff;
+    vertical-align: top;
+    margin-left: -12px;
+    margin-top: -30px;
+}
+.fa-shopping-cart{
+  color: purple;
+}
+
 
 a{
   text-decoration: none;
