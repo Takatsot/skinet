@@ -13,10 +13,8 @@ export class AccountService {
   baseUrl = environment.apiUrl;
   private currentUserSource = new ReplaySubject<IUser>(1);
   currentUser$ = this.currentUserSource.asObservable();
-
+  
   constructor(private http: HttpClient, private router: Router) { }
-
-
 
   loadCurrentUser(token: string) {
     if (token === null) {
